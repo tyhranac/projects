@@ -1,4 +1,3 @@
-#!/path/to/python/interpreter
 import os
 from colorama import init
 
@@ -19,8 +18,16 @@ def tree(path):
 			print('\033[1;33m{}{}'.format('  '*depth, entry.name))
 			tree(entry.path)
 
-tree(root)
 
-for entry in os.scandir(root):
-	if not entry.is_dir():
-		print('\033[1;37m{}'.format(entry.name))
+def root_leaves(path):
+	for entry in os.scandir(root):
+		if not entry.is_dir():
+			print('\033[1;37m{}'.format(entry.name))
+
+
+def main():
+	if __name__ == '__main__':
+		tree(root)
+		root_leaves(root)
+
+main()
