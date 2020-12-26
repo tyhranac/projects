@@ -2,6 +2,8 @@
 import os
 from colorama import init
 
+# init from colorama replaces ANSI escape sequences
+# with Win32 equivalents
 init()
 
 root = os.getcwd()
