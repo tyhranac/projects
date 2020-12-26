@@ -24,4 +24,4 @@ tree(root)
 
 for entry in os.scandir(root):
 	if not entry.is_dir():
-		print(entry.name)
+		print('\033[1;37m{}'.format(entry.name))
