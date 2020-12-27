@@ -2,7 +2,8 @@ import os
 from colorama import init
 
 # init from colorama replaces ANSI escape sequences with Win32 equivalents
-init()
+if os.name == 'nt':
+	init()
 
 root = os.getcwd()
 
