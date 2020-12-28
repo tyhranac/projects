@@ -33,4 +33,3 @@ def main():
 		root_leaves(root)
 
 main()
-
