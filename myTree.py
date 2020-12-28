@@ -1,3 +1,4 @@
+#!path/to/python/interpreter
 import os
 
 # init from colorama replaces ANSI escape sequences with Win32 equivalents
@@ -32,3 +33,4 @@ def main():
 		root_leaves(root)
 
 main()
+
