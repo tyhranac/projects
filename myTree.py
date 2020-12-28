@@ -1,8 +1,9 @@
+#!path/to/python/interpreter
 import os
+from colorama import init
 
 # init from colorama replaces ANSI escape sequences with Win32 equivalents
 if os.name == 'nt':
-	from colorama import init
 	init()
 
 root = os.getcwd()
@@ -32,3 +33,4 @@ def main():
 		root_leaves(root)
 
 main()
+
